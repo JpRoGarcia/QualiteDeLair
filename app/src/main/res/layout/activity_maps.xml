@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MapsActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:background="#00E676"
+        android:padding="5dp">
+
+        <EditText
+            android:id="@+id/edLat"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Latitud"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"/>
+
+        <EditText
+            android:id="@+id/edLon"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:hint="Longitud"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/white"/>
+
+        <Button
+            android:id="@+id/btnBuscar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Buscar"
+            android:layout_marginLeft="15dp"
+            android:background="#FF9100"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <fragment
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
